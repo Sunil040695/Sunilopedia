@@ -118,20 +118,22 @@
       .hero img { min-height:205px; }
       .card { border-radius:15px; }
     }
-  </style>
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    </style>
 </head>
 <body>
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="#">Sunil<span>opedia</span></a>
+      <a class="logo" href="#top">Sunil<span>opedia</span></a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">☰</button>
       <div class="navlinks">
-        <a href="#knowledge">Knowledge</a>
+        <a href="#about">About</a>
         <a href="#business-central">Business Central</a>
-        <a href="#topics">Topics</a>
-        <a href="#profile">About</a>
+        <a href="#knowledge">Knowledge</a>
+        <a href="#resources">Resources</a>
         <a href="#youtube">YouTube</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
     <div class="mobile-menu" id="mobile-menu">
@@ -140,11 +142,13 @@
       <a href="#topics">Topics</a>
       <a href="#profile">About</a>
       <a href="#youtube">YouTube</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </header>
 
-<main>
+<main id="top">
   <section class="hero" style="padding:0;background:#071b35">
     <div class="wrap" style="width:100%;max-width:none">
       <img src="sunilopedia-homepage-professional.png"
@@ -178,7 +182,7 @@
           <div class="tag">Lessons</div>
           <h3>What experience has taught me</h3>
           <p>Observations and lessons gathered from projects, experiments and everyday work.</p>
-          <a class="read" href="#">Read article →</a>
+          <a class="read" href="#contact">Coming soon →</a>
         </article>
       </div>
     </div>
@@ -193,14 +197,14 @@
         </div>
       </div>
       <div class="topics">
-        <a class="topic" href="#">Technology</a>
-        <a class="topic" href="#">AI</a>
-        <a class="topic" href="#">Business</a>
-        <a class="topic" href="#">Learning</a>
-        <a class="topic" href="#">Career</a>
-        <a class="topic" href="#">Life</a>
-        <a class="topic" href="#">Projects</a>
-        <a class="topic" href="#">Ideas</a>
+        <a class="topic" href="#resources">Technology</a>
+        <a class="topic" href="#resources">AI & Automation</a>
+        <a class="topic" href="#business-central">Business</a>
+        <a class="topic" href="#resources">Learning</a>
+        <a class="topic" href="#resources">Career</a>
+        <a class="topic" href="#about">About</a>
+        <a class="topic" href="#business-central">Projects & UAT</a>
+        <a class="topic" href="#knowledge">Ideas & Articles</a>
       </div>
     </div>
   </section>
@@ -215,22 +219,40 @@
         </div>
       </div>
       <div class="about" style="background:var(--surface);color:var(--text);border:1px solid var(--line);display:block">
-        <div style="margin-bottom:28px">
-          <img src="sunil-profile-professional.png" alt="Sunil Badiginchala — Business Central professional" style="width:100%;max-height:520px;object-fit:cover;border-radius:18px;display:block">
+        <div style="display:grid;grid-template-columns:minmax(260px,.75fr) 1.25fr;gap:34px;align-items:start">
+          <div>
+            <img src="sunil-profile-professional.png" alt="Sunil Badiginchala — Business Central professional" style="width:100%;max-height:520px;object-fit:cover;border-radius:18px;display:block">
+          </div>
+          <div>
+            <div class="tag">Senior Global Corporate Trainer & Business Central Functional Consultant</div>
+            <h2 style="margin-top:10px">Sunil Badiginchala</h2>
+            <p style="color:var(--muted)">
+              Microsoft Dynamics 365 Business Central and ERP/CRM professional focused on connecting technology with real business processes. My work combines functional consulting, corporate training, implementation readiness, process transformation and practical learning.
+            </p>
+            <p style="color:var(--muted)">
+              I create learning content for Freshers (Graduates), business users, functional consultants and professionals who want to understand not only how Business Central works, but why a process, transaction, workflow or configuration matters.
+            </p>
+            <div class="topics" style="margin:16px 0">
+              <span class="topic">10+ Years Training & Consulting</span>
+              <span class="topic">Training & Consulting Experience</span>
+              <span class="topic">160+ Training Batches</span>
+              <span class="topic">23+ MB-800 Batches</span>
+            </div>
+            <div class="buttons" style="margin-top:18px">
+              <a class="btn primary" href="mailto:bsunil64@gmail.com">Email Sunil</a>
+              <a class="btn" href="https://www.linkedin.com/in/sunil-badiginchala-17535171/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn" href="https://youtube.com/@sunilbadiginchala6826" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="tag">Senior BC Functional Consultant</div>
-          <h2 style="margin-top:10px">Sunil Badiginchala</h2>
-          <p style="color:var(--muted)">
-            Senior Business Central Functional Consultant focused on end-to-end implementations,
-            support and solution delivery across Finance, SCM, Projects and Fixed Assets.
-            Experienced in requirements gathering, data migration, workflows, UAT, training and
-            business process optimization.
+        <div style="margin-top:34px;padding-top:28px;border-top:1px solid var(--line)">
+          <div class="tag">Core expertise</div>
+          <p style="color:var(--muted);margin:10px 0 0">
+            Business Central • Finance • Supply Chain • ERP process mapping • Requirements & GAP analysis • Data migration • Workflows & approvals • Testing & UAT • Documentation • User training • Implementation readiness • Power Platform and business automation.
           </p>
-          <a class="btn primary" href="mailto:bsunil64@gmail.com">Contact Sunil</a>
         </div>
-        <div>
-          <div class="tag">Certifications</div>
+        <div style="margin-top:28px">
+          <div class="tag">Certifications & credentials</div>
           <div class="topics" style="margin-top:14px">
             <span class="topic">MCT</span>
             <span class="topic">MB-800</span>
@@ -238,10 +260,6 @@
             <span class="topic">MB-330</span>
             <span class="topic">AB-900</span>
           </div>
-          <p style="color:var(--muted);font-size:13px;margin-top:18px">
-            Microsoft Certified Trainer and Microsoft certification credentials focused on
-            Business Central, Finance, Supply Chain and related Microsoft technologies.
-          </p>
         </div>
       </div>
     </div>
@@ -257,9 +275,9 @@
         </div>
       </div>
       <div class="grid">
-        <article class="card"><div class="tag">Functional</div><h3>Finance & Accounting</h3><p>Posting groups, dimensions, taxation, reporting, approvals and financial processes.</p><a class="read" href="#">Explore →</a></article>
-        <article class="card"><div class="tag">SCM</div><h3>Supply Chain & Operations</h3><p>Procurement, inventory, sales and cross-module business processes.</p><a class="read" href="#">Explore →</a></article>
-        <article class="card"><div class="tag">Implementation</div><h3>Projects & UAT</h3><p>Requirements, gap-fit analysis, data migration, testing, documentation and user training.</p><a class="read" href="#">Explore →</a></article>
+        <article class="card"><div class="tag">Functional</div><h3>Finance & Accounting</h3><p>Posting groups, dimensions, taxation, reporting, approvals and financial processes.</p><a class="read" href="#knowledge">Explore knowledge →</a></article>
+        <article class="card"><div class="tag">SCM</div><h3>Supply Chain & Operations</h3><p>Procurement, inventory, sales and cross-module business processes.</p><a class="read" href="#knowledge">Explore knowledge →</a></article>
+        <article class="card"><div class="tag">Implementation</div><h3>Projects & UAT</h3><p>Requirements, gap-fit analysis, data migration, testing, documentation and user training.</p><a class="read" href="#knowledge">Explore knowledge →</a></article>
       </div>
     </div>
   </section>
@@ -272,16 +290,56 @@
           <h2>Sunil on YouTube</h2>
           <p>Videos and practical knowledge shared by Sunil.</p>
         </div>
-        <a class="btn" href="https://www.youtube.com/results?search_query=sunil+badiginchala+videos" target="_blank" rel="noopener">View YouTube →</a>
+        <a class="btn" href="https://youtube.com/@sunilbadiginchala6826" target="_blank" rel="noopener">View YouTube →</a>
       </div>
       <div class="card" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
         <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#171717,#5b4bdb);border-radius:14px;display:grid;place-items:center;color:white;font-size:42px;font-weight:800">▶</div>
         <div>
           <div class="tag">Latest videos</div>
           <h3 style="font-size:26px">Business Central knowledge, explained simply.</h3>
-          <p>Explore Sunil's videos on Business Central and related topics. The YouTube search link is kept live so the latest videos are always accessible.</p>
-          <a class="btn primary" href="https://www.youtube.com/results?search_query=sunil+badiginchala+videos" target="_blank" rel="noopener">Watch on YouTube</a>
+          <p>Explore Sunil's Business Central, ERP and learning videos. Visit the channel for the latest practical content and webinars.</p>
+          <a class="btn primary" href="https://youtube.com/@sunilbadiginchala6826" target="_blank" rel="noopener">Watch on YouTube</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="tag">Learn & Explore</div>
+          <h2>Resources</h2>
+          <p>Useful learning resources for Business Central, ERP and functional consulting.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="tag">Sunilopedia</div><h3>Business Central Blogs</h3><p>Read practical, beginner-friendly guides covering ERP concepts, Business Central processes and functional consulting.</p><a class="read" href="#knowledge">Explore articles →</a></article>
+        <article class="card"><div class="tag">YouTube</div><h3>Video Learning</h3><p>Watch Business Central and ERP explanations, walkthroughs and practical learning content.</p><a class="read" href="https://youtube.com/@sunilbadiginchala6826" target="_blank" rel="noopener">Visit channel →</a></article>
+        <article class="card"><div class="tag">Freshers (Graduates)</div><h3>Interview Preparation</h3><p>Build Business Central fundamentals, process understanding and Functional Consultant interview readiness.</p><a class="read" href="#contact">Coming soon →</a></article>
+        <article class="card"><div class="tag">Functional Consulting</div><h3>Learning Material</h3><p>Practical material for requirements, process mapping, configuration awareness, documentation and implementation readiness.</p><a class="read" href="#contact">Explore soon →</a></article>
+        <article class="card"><div class="tag">Data Migration</div><h3>Data Migration Resources</h3><p>Guidance and practical learning around master data, opening balances, entities and migration activities.</p><a class="read" href="#contact">Explore soon →</a></article>
+        <article class="card"><div class="tag">Testing & UAT</div><h3>UAT & Testing Resources</h3><p>Practical resources for test cases, validation, UAT cycles, defect analysis and business sign-off.</p><a class="read" href="#contact">Explore soon →</a></article>
+        <article class="card"><div class="tag">Microsoft Learn</div><h3>Official Business Central Learning</h3><p>Microsoft's official learning path for getting started with Business Central.</p><a class="read" href="https://learn.microsoft.com/en-us/training/paths/get-started-dynamics-365-business-central/" target="_blank" rel="noopener">Open resource →</a></article>
+        <article class="card"><div class="tag">Webinar</div><h3>Business Central Made Simple</h3><p>Join the beginner-friendly webinar on Saturday, 26 September 2026, 8:00–9:00 PM IST.</p><a class="read" href="https://events.teams.microsoft.com/event/ce853cb5-3968-4ace-a0d7-be6649f642e9@3b383087-658b-407d-b172-ef03b21521c6?source=copyLinkLegacyShareLinkDialog" target="_blank" rel="noopener">Register →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <div class="tag" style="color:#aaa">Contact Sunil</div>
+          <h2 style="margin-top:10px">Let's connect.</h2>
+          <p>For Business Central discussions, learning, collaboration and professional enquiries.</p>
+          <div style="display:grid;gap:10px;margin-top:18px">
+            <a href="mailto:bsunil64@gmail.com">📧 bsunil64@gmail.com</a>
+            <a href="tel:+919398186645">📞 +91 9398186645</a>
+            <a href="https://www.linkedin.com/in/sunil-badiginchala-17535171/" target="_blank" rel="noopener">💼 LinkedIn</a>
+          </div>
+        </div>
+        <div class="quote">Knowledge, explained simply.</div>
       </div>
     </div>
   </section>
@@ -296,7 +354,7 @@
             I'm Sunil Badiginchala. Sunilopedia is my personal space for turning
             knowledge and experience into useful, understandable content.
           </p>
-          <a class="btn" style="background:white;border-color:white;display:inline-block" href="mailto:hello@sunilopedia.com">Get in touch</a>
+          <a class="btn" style="background:white;border-color:white;display:inline-block" href="mailto:bsunil64@gmail.com">Get in touch</a>
         </div>
         <div class="quote">“The best knowledge is the knowledge you can actually use.”</div>
       </div>
@@ -305,7 +363,7 @@
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Sunilopedia · Sunil Badiginchala</div>
+  <div class="wrap">© 2026 Sunilopedia · Sunil Badiginchala · <a href="mailto:bsunil64@gmail.com">bsunil64@gmail.com</a> · <a href="https://www.linkedin.com/in/sunil-badiginchala-17535171/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://youtube.com/@sunilbadiginchala6826" target="_blank" rel="noopener">YouTube</a></div>
 </footer>
 
 <script>
@@ -325,6 +383,20 @@
       });
     });
   }
+
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (event) => {
+      const id = link.getAttribute('href');
+      if (id && id !== '#') {
+        const target = document.querySelector(id);
+        if (target) {
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, '', id);
+        }
+      }
+    });
+  });
 </script>
 </body>
 </html>
